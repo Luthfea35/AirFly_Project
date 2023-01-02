@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --green:#27ae60;
+   --orange:#f39c12;
+   --red:#e74c3c;
+   --black:#333;
+   --light-color:#666;
+   --white:#fff;
+   --blue:rgb(17, 35, 236);
+   --light-bg:#f6f6f6;
+   --border:.2rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   color:var(--black);
+}
+
+*::selection{
+   background-color: var(--green);
+   color:var(--white);
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--green);
+}
+
+body{
+   background-image: url(../img/se.2.jpg);
+   background-size: 1300px;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6.5rem;
+}
+
+
+.btn{
+   display: block;
+   width: 80%;
+   /* margin:1rem 0; */
+   text-align: center;
+   margin-top: 2rem;
+   color:var(--white);
+   font-size: 2rem;
+   padding:1.3rem 3rem;
+   text-transform: capitalize;
+   cursor: pointer;
+   border-radius: 30px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.btn{
+   background-color: var(--blue);
+}
+
+.btn:hover{
+   background-color: var(--green);
+}
+
+
+
+.form-container{
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* background-color: var(--light-color); */
+}
+
+.form-container form{
+   width: 45rem;
+   /* height: 60rem; */
+   background-color: var(--black);
+   border-radius: 30px;
+   box-shadow: var(--box-shadow);
+   border:var(--border);
+   text-align: center;
+  
+}
+
+.form-container form h3{
+   font-size: 2.5rem;
+   color:var(--white);
+   padding: 0.5em;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   text-transform: uppercase;
+}
+
+.form-container form .box{
+   width: 80%;
+   /* margin:1rem 0; */
+   border-radius: .5rem;
+   border:var(--border);
+   padding:1.2rem 1.4rem;
+   font-size: 1.8rem;
+   color:var(--black);
+   background-color: var(--light-bg);
+   border-radius: 30px;
+   margin-bottom: 5px;
+   margin-top   : 10px;
+}
+
+.form-container form p{
+   margin-top: 2rem;
+   font-size: 2.2rem;
+   color:var(--white);
+   text-align: center;
+}
+
+.form-container form p a{
+   color:var(--green);
+}
+
+.form-container form p a:hover{
+   text-decoration: underline;
+}
